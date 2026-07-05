@@ -1,5 +1,5 @@
 {
-  "name": "serverless-deployment-bucket",
+  "name": "@kennethwkz/serverless-deployment-bucket",
   "version": "1.6.0",
   "description": "Create and configure the Serverless deployment bucket.",
   "main": "lib/index.js",
@@ -7,11 +7,12 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "jest --env node --coverage"
+    "test": "jest --env node --coverage",
+    "deploy": "np --no-tests"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MikeSouza/serverless-deployment-bucket.git"
+    "url": "git+https://github.com/KennethWKZ/serverless-deployment-bucket.git"
   },
   "keywords": [
     "serverless",
@@ -30,15 +31,28 @@
   "author": "Mike Souza",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MikeSouza/serverless-deployment-bucket/issues"
+    "url": "https://github.com/KennethWKZ/serverless-deployment-bucket/issues"
   },
-  "homepage": "https://github.com/MikeSouza/serverless-deployment-bucket#readme",
+  "homepage": "https://github.com/KennethWKZ/serverless-deployment-bucket#readme",
   "devDependencies": {
-    "coveralls": "^3.1.0",
-    "jest": "^26.6.3",
-    "serverless": "^2.41.0"
+    "coveralls": "^3.1.1",
+    "jest": "^30.4.2",
+    "np": "^11.2.1",
+    "serverless": "^4.38.1"
   },
-  "dependencies": {
-    "chalk": "^2.4.2"
+  "peerDependencies": {
+    "osls": "3.x || 4.x",
+    "serverless": "2.x || 3.x || 4.x"
+  },
+  "peerDependenciesMeta": {
+    "serverless": {
+      "optional": true
+    },
+    "osls": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=22"
   }
 }
