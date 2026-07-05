@@ -38,16 +38,21 @@
   },
   "homepage": "https://github.com/KennethWKZ/serverless-deployment-bucket#readme",
   "devDependencies": {
+    "@aws-sdk/client-s3": "^3.1079.0",
     "coveralls": "^3.1.1",
     "jest": "^30.4.2",
     "np": "^11.2.1",
     "serverless": "^4.38.1"
   },
   "peerDependencies": {
+    "@aws-sdk/client-s3": "^3.0.0",
     "osls": "3.x || 4.x",
     "serverless": "2.x || 3.x || 4.x"
   },
   "peerDependenciesMeta": {
+    "@aws-sdk/client-s3": {
+      "optional": true
+    },
     "serverless": {
       "optional": true
     },
